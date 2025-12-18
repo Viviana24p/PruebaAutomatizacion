@@ -1,0 +1,14 @@
+Conclusiones
+
+- La API de Demoblaze para registro (/signup) devuelve siempre un status 200, sin importar si la operación fue exitosa o fallida. La diferencia está en el contenido del body:
+
+- Éxito: Un string con "".
+- Error: Un objeto con la propiedad errorMessage ("This user already exist.")
+
+- En el caso del login (/login), la respuesta también es particular:
+
+- Éxito: Un string con el token de autenticación (Auth_token).
+- Error: Un objeto con la propiedad errorMessage ("Wrong password.").
+
+- Es importante no confiar únicamente en el status code, ya que siempre es 200. La validación debe hacerse sobre el contenido del body.
+- Para evitar errores en el registro, conviene generar usernames únicos usando Date.now() o algún identificador dinámico.

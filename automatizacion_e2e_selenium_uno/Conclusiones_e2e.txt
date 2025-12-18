@@ -1,0 +1,10 @@
+CONCLUSIONES DEL EJERCICIO
+
+- El flujo de compra en el sitio Demoblaze.com se ejecutó correctamente.
+- Se agregaron dos productos al carrito: Samsung Galaxy S6 y Nokia Lumia 1520.
+- Se completó el formulario con datos ficticios y se realizó la compra.
+- Se tomó capturas de pantalla en cada paso 
+- Se utilizó Selenium WebDriver con Python
+- Posibles mejoras:
+    * Tomar screenshoots con la hora 
+    * Manejar excepciones para hacer el script más robusto.
